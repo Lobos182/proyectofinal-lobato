@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- link para traer el icono del menu cuando es responsive -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Productos</title>
+</head>
+
+<body class="grid-container">
+    <!-- Encabezado de pagina, se repite en todas las paginas igual -->
+    <header class="grid-encabezado">
+        <div class="ancho">
+            <div class="logo">
+                <a href="index.html"><img src="Multimedio/Logo.png" alt="logo" class="logo-image"></a>
+            </div>
+            <div class="menu-lista" id="mi-menu">
+                <a href="index.html#nosotros">Nosotros</a>
+                <a href="productos.html">Productos</a>
+                <a href="registrar.html">Registro</a>
+                <a href="index.html#contac">Contacto</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- aca deberia haber una lista desplegable para elegir el tipo de producto que queremos ver -->
+    <section class="grid-section">
+        <div class="titulo-producto">
+            <h2>Catalogo de Productos</h2>
+        </div>
+        <!-- una vez elegido el tipo de producto se llenaria una tabla 
+    trayendo los datos desde una base de datos mostrando la foto y la descripcion -->
+        <div class="producto">
+            <div class="producto-item">
+                <img id="prod-img" src="Multimedio/productos/prod1.jpg" alt="producto1">
+                <p>Notebook</p>
+            </div>
+            <div class="producto-item">
+                <img id="prod-img" src="Multimedio/productos/prod2.png" alt="producto2">
+                <p>Celulares</p>
+            </div>
+            <div class="producto-item">
+                <img id="prod-img" src="Multimedio/productos/prod3.webp" alt="producto3">
+                <p>Gabinetes</p>
+            </div>
+            <div class="producto-item">
+                <img id="prod-img" src="Multimedio/productos/prod4.jpg" alt="producto4">
+                <p>Mouse</p>
+            </div>
+            <div class="producto-item">
+                <img id="prod-img" src="Multimedio/productos/prod5.webp" alt="producto5">
+                <p>Auriculares</p>
+            </div>
+            <div class="producto-item">
+                <img id="prod-img" src="Multimedio/productos/prod6.jpg" alt="producto6">
+                <p>Monitores</p>
+            </div>
+            <div class="producto-item">
+                <img id="prod-img" src="Multimedio/productos/prod7.webp" alt="producto7">
+                <p>Teclados</p>
+            </div>
+        </div>
+    </section>
+    <!-- aside propaganda -->
+    <aside class="grid-propaganda">
+        <div class="propaganda">
+            <img class="img-propaganda" src="Multimedio/Publicidad.png" alt="publicidad">
+        </div>
+    </aside>
+    <!-- Boton flotante de whatsapp -->
+    <section>
+        <div>
+            <a href="https://www.whatsapp.com/"><img src="Multimedio/redes-sociales/whatsapp.svg" alt="whatsapp"
+                    class="whatsapp"></a>
+        </div>
+    </section>
+
+    <footer class="grid-pie">
+        <!--  aca esta el pie de pagina va a ser igual es las demas paginas porque es 
+        inforamcion q siempre queremos que se vea-->
+        <nav class="pie">
+            <div class="soporte">
+                <h5>Soporte</h5>
+                <!-- esta opcion va a estar siempre disponible para ir a contacto -->
+                <div><a href="#contacto">¿Necesitas ayuda?</a></div>
+            </div>
+            <div class="redes">
+                <h5>Seguinos</h5>
+                <div><a href="https://facebook.com">
+                        <img src="Multimedio/redes-sociales/facebook.svg" alt="Facebook" id="redes">
+                    </a></div>
+                <div><a href="https://instagram.com">
+                        <img src="Multimedio/redes-sociales/instagram.svg" alt="Instagram" id="redes">
+                    </a></div>
+                <div><a href="https://twitter.com">
+                        <img src="Multimedio/redes-sociales/twitter.svg" alt="Twitter" id="redes">
+                    </a></div>
+            </div>
+            <div class="legal">
+                <h5>Legal</h5>
+                <!-- aca estas dos opciones deberian ir a una pagina donde esten los terminos y la politica -->
+                <div><a href="">Terminos de uso</a></div>
+                <div><a href="">Politica de privacidad</a></div>
+                <div>
+                    <h6>Data Fiscal</h6>
+                    <!-- aca va a ir el tema del link a la pagina de la afip  -->
+                    <a href="https://afip.gob.ar"><img src="Multimedio/redes-sociales/qr.svg" alt="Afip" id="qr">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mi-menu");
+            if (x.className === "menu-lista") {
+                x.className += "responsive";
+            } else {
+                x.className = "menu-lista";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

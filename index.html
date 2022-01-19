@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- link para traer el icono del menu cuando es responsive -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Inicio</title>
+</head>
+
+<body class="grid-container">
+
+    <!-- Encabezado de pagina, se repite en todas las paginas igual -->
+    <header class="grid-encabezado">
+        <div class="ancho">
+            <div class="logo">
+                <a href="index.html"><img src="Multimedio/Logo.png" alt="logo" class="logo-image"></a>
+            </div>
+            <div class="menu-lista" id="mi-menu">
+                <a href="#nosotros">Nosotros</a>
+                <a href="productos.html">Productos</a>
+                <a href="registrar.html">Registro</a>
+                <a href="#contac">Contacto</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="grid-section">
+        <section class="section-uno">
+            <h1>Ofertas Semanales</h1>
+            <div>
+                <img class="img-oferta img-animacion" src="Multimedio/ofertas/img1.jpg" alt="productos ofertas">
+                <img class="img-oferta img-animacion" src="Multimedio/ofertas/img2.jpg" alt="productos ofertas">
+                <img class="img-oferta img-animacion" src="Multimedio/ofertas/img3.webp" alt="productos ofertas">
+            </div>
+
+        </section>
+        <section class="section-dos" id="nosotros">
+            <h2>Nosotros</h2>
+            <img class="img-historia" src="Multimedio/historia.jpg" alt="foto empresa">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod veritatis ipsa nulla harum eligendi hic
+                numquam atque incidunt. Cupiditate nostrum asperiores accusamus commodi ullam nesciunt maiores dolorum
+                maxime molestias officia!
+                Autem soluta ad provident nulla similique? Voluptate tempora enim architecto ut consequatur incidunt
+                veniam quis dignissimos distinctio? Exercitationem dolores, animi corrupti numquam eos est quam maiores
+                praesentium, expedita eligendi molestias.
+                Magni voluptatum soluta incidunt commodi eaque laboriosam asperiores quos velit. Ad ut minima impedit,
+                voluptas aliquid exercitationem. Dignissimos temporibus architecto minus soluta, minima iure fugit,
+                quisquam, illo non enim alias!
+                Quasi voluptate, aliquid veniam doloremque ut explicabo, ad perspiciatis libero quae commodi illum
+                ducimus ea impedit iste vitae voluptatem voluptatum, et nulla magnam sequi accusantium? Corporis atque
+                eius veniam laboriosam.
+                Fuga aliquid laudantium nam modi! Cum nostrum eveniet alias! Repellendus, quia? Ducimus, ex ad quidem
+                alias totam cupiditate excepturi, suscipit, repudiandae accusamus velit voluptas facilis. Suscipit
+                aliquid non voluptas nostrum?
+                Officia modi nesciunt iusto quidem alias? Laudantium eos cupiditate placeat. Doloremque, deserunt et
+                excepturi ducimus eos sit quos amet iste rerum animi quod assumenda laudantium dignissimos,
+                reprehenderit, repellat quaerat minus.
+                Quas placeat nulla optio, iure tempora ducimus delectus nemo ipsum vitae, ipsa soluta perspiciatis
+                sapiente nisi voluptatum. Voluptatum, nisi! Illum accusamus fugiat nisi repudiandae recusandae possimus
+                ea fuga nihil deserunt.
+                Quod voluptatum a possimus aut! Cum ad quidem, magnam ipsum sed labore illo eius fuga iste error non
+                officia animi veniam doloribus aut dolor! Ullam sunt praesentium delectus distinctio consequuntur.</p>
+
+        </section>
+        <section class="section-tres" id="contac">
+            <h2>Contacto</h2><br /><br />
+            <div class="form-contacto">                                
+                <!-- aca podriamos poner una tabla o con css para poner el mapita a un costado -->
+                <div class="form-cont">
+                    <form>
+                        <p>Nombre:</p>
+                        <input type="text" name="nombre" placeholder="Ingresa tu nombre">
+                        <br />
+                        <p>Apellido:</p>
+                        <input type="text" name="apellido" placeholder="Ingresa tu apellido">
+                        <br />
+                        <p>Telefono:</p>
+                        <input type="tel" name="telefono" placeholder="Ingresa tu telefono">
+                        <br />
+                        <p>Email</p>
+                        <input type="email" name="email" placeholder="Ingresa tu email">
+                        <p>Mensaje:</p>
+                        <textarea cols="40" placeholder="Ingresa tu mensaje"></textarea>
+                        <br />
+                        <input type="submit" value="ENVIAR">
+                    </form>
+                </div>
+                <!-- aca pegamos desde maps el mapa de ubicacion del lugar -->
+                <div class="mapa-cont">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d214435.89864501468!2d-68.858519!3d-32.883335!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e093ec45179bf%3A0x205a78f6d20efa3a!2sMendoza%2C%20Capital%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1640202094544!5m2!1ses-419!2sar"
+                        width="700" height="500" frameborder="0" style="border:0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+
+
+        </section>
+    </section>
+    <!-- aside propaganda -->
+    <aside class="grid-propaganda">
+        <div class="propaganda">
+            <img class="img-propaganda" src="Multimedio/Publicidad.png" alt="publicidad">
+        </div>
+    </aside>
+    <!-- Boton flotante de whatsapp -->
+    <section>
+        <div>
+            <a href="https://www.whatsapp.com/"><img src="Multimedio/redes-sociales/whatsapp.svg" alt="whatsapp"
+                    class="whatsapp"></a>
+        </div>
+    </section>
+
+    <footer class="grid-pie">
+        <!--  aca esta el pie de pagina va a ser igual es las demas paginas porque es 
+    inforamcion q siempre queremos que se vea-->
+        <nav class="pie">
+            <div class="soporte">
+                <h5>Soporte</h5>
+                <!-- esta opcion va a estar siempre disponible para ir a contacto -->
+                <div><a href="#contacto">¿Necesitas ayuda?</a></div>
+            </div>
+            <div class="redes">
+                <h5>Seguinos</h5>
+                <div><a href="https://facebook.com">
+                        <img src="Multimedio/redes-sociales/facebook.svg" alt="Facebook" id="redes">
+                    </a></div>
+                <div><a href="https://instagram.com">
+                        <img src="Multimedio/redes-sociales/instagram.svg" alt="Instagram" id="redes">
+                    </a></div>
+                <div><a href="https://twitter.com">
+                        <img src="Multimedio/redes-sociales/twitter.svg" alt="Twitter" id="redes">
+                    </a></div>
+            </div>
+            <div class="legal">
+                <h5>Legal</h5>
+                <!-- aca estas dos opciones deberian ir a una pagina donde esten los terminos y la politica -->
+                <div><a href="">Terminos de uso</a></div>
+                <div><a href="">Politica de privacidad</a></div>
+                <div>
+                    <h6>Data Fiscal</h6>
+                    <!-- aca va a ir el tema del link a la pagina de la afip  -->
+                    <a href="https://afip.gob.ar"><img src="Multimedio/redes-sociales/qr.svg" alt="Afip" id="qr">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mi-menu");
+            if (x.className === "menu-lista") {
+                x.className += " responsive";
+            } else {
+                x.className = "menu-lista";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
