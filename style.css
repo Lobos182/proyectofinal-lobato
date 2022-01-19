@@ -264,7 +264,7 @@ body{
 .form-registro{
     width: 50%;
     margin: 1px auto;
-    background: greenyellow;
+    background: linear-gradient(to bottom, blue, white);
     padding: 30px;
     padding-bottom: 5%;
 }
@@ -291,13 +291,13 @@ input[type="submit"]{
     width: 120px;
     height: 35px;
     color:navy;
-    background: linear-gradient(maroon,white);
+    background: linear-gradient(rgb(255, 0, 0),rgb(29, 251, 0));
     float: right;
     border: 0;
 }
 
 input[type="submit"]:hover{
-    background: linear-gradient(white,maroon);
+    background: linear-gradient(rgb(29, 251, 0),rgb(255, 0, 0));
     color: royalblue;
 }
 
